@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.opennaas.extensions.network.model</groupId>
+    <artifactId>validation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>releases-repository.java.net</id>
+            <name>Java.net releases Repository for Maven</name>
+            <url>https://maven.java.net/content/repositories/releases/</url>
+            <layout>default</layout>
+        </repository>
+
+        <!--repository>
+            <id>central</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository-->
+
+
+        <repository>
+            <id>releases-repository.jersey</id>
+            <name>Java.net releases Repository for Maven</name>
+            <url>http://repo1.maven.org/maven2/org/glassfish/jersey/</url>
+        </repository>
+
+        <!-- JenaBean repository -->
+        <repository>
+            <id>Jenabean</id>
+            <url>http://jenabean.googlecode.com/svn/repo</url>
+        </repository>
+
+        <!-- JTriple repository -->
+        <repository>
+            <id>berlin.reiche.jtriple</id>
+            <url>https://github.com/platzhirsch/jtriple/raw/master/repository/releases</url>
+        </repository>
+
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>rdfbeans-repo</id>
+            <name>RDFBeans</name>
+            <url>http://rdfbeans.sf.net/repo</url>
+        </repository>
+
+        <repository>
+            <id>semweb4j-repo</id>
+            <name>Semweb4j.org maven repo</name>
+            <url>http://semweb4j.org/repo/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+        <repository>
+            <id>apache-releases-repo</id>
+            <url>https://repository.apache.org/content/repositories/releases/</url>
+        </repository>
+
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>libs-release</name>
+            <url>http://localhost:8081/artifactory/libs-release</url>
+        </repository>
+
+        <repository>
+            <id>maven.aksw.internal</id>
+            <name>University Leipzig, AKSW Maven2 Internal Repository</name>
+            <url>http://maven.aksw.org/repository/internal/</url>
+        </repository>
+
+        <repository>
+            <id>vaadin-releases</id>
+            <url>http://oss.sonatype.org/content/repositories/staging</url>
+        </repository>
+
+    </repositories>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-core</artifactId>
+            <version>2.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>jena-arq</artifactId>
+            <version>2.12.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.ansell.pellet</groupId>
+            <artifactId>pellet-owlapiv3</artifactId>
+            <version>2.3.3</version>
+        </dependency>
+
+    </dependencies>
+    
+</project>

@@ -1,0 +1,25 @@
+/**
+ *
+ *
+ * @param {string} $primary-stylename (v-upload) - 
+ *
+ * @group upload
+ */
+@mixin valo-upload ($primary-stylename: v-upload) {
+  .#{$primary-stylename} .v-button {
+    @include valo-widget-style;
+    font-size: large;
+  }
+
+  .#{$primary-stylename}-immediate input[type="file"] {
+    @include opacity(0);
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    height: $v-unit-size;
+    text-align: right;
+    border: none;
+    background: transparent;
+    font-size: large;
+  }
+}

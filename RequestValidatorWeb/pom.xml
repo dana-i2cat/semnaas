@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.opennaas.extensions.network.model</groupId>
+        <artifactId>request</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>nl.uva.sne</groupId>
+    <artifactId>VaaadinClient</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+   <build>
+       <plugins>
+           <plugin>
+               <groupId>org.codehaus.mojo</groupId>
+               <artifactId>exec-maven-plugin</artifactId>
+               <version>1.3.2</version>
+               <executions>
+                   <execution>
+                       <phase>generate-sources</phase>
+                       <goals>
+                           <goal>java</goal>
+                       </goals>
+                       <configuration>
+
+                           <!--classpathScope>compile</classpathScope-->
+                           <mainClass>com.vaadin.sass.SassCompiler</mainClass>
+                           <arguments>
+                               <argument>src/main/resources/VAADIN/themes/valo/style.scss</argument>
+                               <argument>src/main/resources/VAADIN/themes/valo/style.css</argument>
+                           </arguments>
+                       </configuration>
+                   </execution>
+               </executions>
+           </plugin>
+
+
+           <plugin>
+               <groupId>com.vaadin</groupId>
+               <artifactId>vaadin-maven-plugin</artifactId>
+               <version>7.3.2</version>
+               <executions>
+                   <execution>
+
+                       <configuration>
+
+                           <!-- if you don't specify any modules, the plugin will find them -->
+                           <!--
+                           <modules>
+                               <module>${package}.gwt.MyWidgetSet</module>
+                           </modules>
+                           -->
+                           <webappDirectory>/Users/mohamed/UniversityOfAmsterdam/JavaProjects/TestRESTfulWebService/VaaadinClient/src/main/resources/VAADIN</webappDirectory>
+                           <theme>/Users/mohamed/UniversityOfAmsterdam/JavaProjects/TestRESTfulWebService/VaaadinClient/src/main/resources/VAADIN/themes/valo</theme>
+
+
+                       </configuration>
+                       <goals>
+                           <goal>clean</goal>
+                           <goal>resources</goal>
+                           <goal>update-theme</goal>
+                           <goal>update-widgetset</goal>
+                           <goal>compile-theme</goal>
+                           <goal>compile</goal>
+                       </goals>
+                   </execution>
+               </executions>
+           </plugin>
+
+       </plugins>
+   </build>
+
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-server</artifactId>
+            <version>7.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-client</artifactId>
+            <version>7.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-themes</artifactId>
+            <version>7.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-client-compiler</artifactId>
+            <version>7.3.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-theme-compiler</artifactId>
+            <version>7.1.15</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.opennaas.extensions.network.model</groupId>
+            <artifactId>validation</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
