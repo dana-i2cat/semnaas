@@ -10,12 +10,12 @@ SemNaaS aims to improve OpenNaaS using Semantic Web technologies. It has several
 	- Capability of constructing distributed and interconnected OpenNaaS instances;
 	- Complex status report generation.
 
-## Prerequisites 
+### Prerequisites 
 
-	1- JDK 7.0.
-	2- Maven 2 or later.
-	3- Apache Tomcat 7.0 or higher.
-	4- VAADIN 7.3 or higher.
+	1. JDK 7.0.
+	2. Maven 2 or later.
+	3. Apache Tomcat 7.0 or higher.
+	4. VAADIN 7.3 or higher.
 
 ## Execution
 
@@ -40,8 +40,3 @@ m.morsey@uva.nl
 
 THIS PROGRAM IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY. IT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED.
 
-#### Enhancing the library
-
- 1. Checkout the code
- 2. Run "mvn clean compile" to auto generate binding files
- 3. Open with IDE (e.g. Eclipse or IntelliJ)
