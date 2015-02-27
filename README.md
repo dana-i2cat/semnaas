@@ -10,8 +10,7 @@ SemNaaS aims to improve OpenNaaS using Semantic Web technologies. It has several
 	- Capability of constructing distributed and interconnected OpenNaaS instances;
 	- Complex status report generation.
 
-### Prerequisites 
-
+### Prerequisites
 	1. JDK 7.0.
 	2. Maven 2 or later.
 	3. Apache Tomcat 7.0 or higher.
