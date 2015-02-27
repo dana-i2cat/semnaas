@@ -10,20 +10,15 @@ SemNaaS aims to improve OpenNaaS using Semantic Web technologies. It has several
 	- Capability of constructing distributed and interconnected OpenNaaS instances;
 	- Complex status report generation.
 
-#### Enhancing the library
+#### Prerequisites
 
  1. JDK 7.0
  2. Maven 2 or later
  3. Apache Tomcat 7.0 or higher
  4. VAADIN 7.3 or higher
 
-### Prerequisites
-	1. JDK 7.0.
-	2. Maven 2 or later.
-	3. Apache Tomcat 7.0 or higher.
-	4. VAADIN 7.3 or higher.
 
-## Execution
+### Execution
 
 SemNaaS is divided into 3 main subprojects:
 
@@ -35,14 +30,14 @@ SemNaaS is divided into 3 main subprojects:
 All applications are Maven-based, so in order to build any of them the user can use "mvn install" command.
 With regard to application "RequestValidatorWeb", after running the command, a WAR file is generated which should be deployed into your Apache Tomcat "webapps" dierctory.
 
-## Contact
+### Contact
 
 Mohamed Morsey
 Department of Computer Science
 University of Amsterdam
 m.morsey@uva.nl
 
-## Licensing
+### Licensing
 
 THIS PROGRAM IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY. IT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED.
 
