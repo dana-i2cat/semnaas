@@ -39,3 +39,9 @@ m.morsey@uva.nl
 ## Licensing
 
 THIS PROGRAM IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY. IT IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED.
+
+#### Enhancing the library
+
+ 1. Checkout the code
+ 2. Run "mvn clean compile" to auto generate binding files
+ 3. Open with IDE (e.g. Eclipse or IntelliJ)
