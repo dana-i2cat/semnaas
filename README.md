@@ -1,4 +1,4 @@
-# SemNaaS (Semantic Network as a Service) system
+# SemNaaS (Semantic Network as a Service) System
 
 ## Description
 
@@ -21,13 +21,13 @@ SemNaaS aims to improve OpenNaaS using Semantic Web technologies. It has several
 ### Execution
 
 SemNaaS is divided into 3 main subprojects:
-
-	1- validation: which does the actual NaaS request validation. It performs 2 levels of validation namely request validation, and connectivity check.
-	2- RequestValidationREST: provides the validation funcaionality in the form of a RESTful service, via which any application built on top of SemNaaS can validate its request before proceeding with the actual provisioing process.
-	3- RequestValidatorWeb: is a VAADIN-based Web application, which constitutes the GUI interface of SemNaaS.
+ 1. validation: which does the actual NaaS request validation. It performs 2 levels of validation namely request validation, and connectivity check.
+ 2. RequestValidationREST: provides the validation funcaionality in the form of a RESTful service, via which any application built on top of SemNaaS can validate its request before proceeding with the actual provisioing process.
+ 3. RequestValidatorWeb: is a VAADIN-based Web application, which constitutes the GUI interface of SemNaaS.
 
 
 All applications are Maven-based, so in order to build any of them the user can use "mvn install" command.
+
 With regard to application "RequestValidatorWeb", after running the command, a WAR file is generated which should be deployed into your Apache Tomcat "webapps" dierctory.
 
 ### Contact
