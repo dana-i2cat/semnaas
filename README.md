@@ -33,8 +33,11 @@ With regard to application "RequestValidatorWeb", after running the command, a W
 ### Contact
 
 Mohamed Morsey
+
 Department of Computer Science
+
 University of Amsterdam
+
 m.morsey@uva.nl
 
 ### Licensing
