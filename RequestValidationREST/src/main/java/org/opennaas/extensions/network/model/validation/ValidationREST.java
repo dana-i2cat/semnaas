@@ -13,10 +13,10 @@ import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
 import com.sun.net.httpserver.HttpServer;
 import org.apache.log4j.Logger;
-import org.opennaas.extensions.network.model.TopologyValidator;
 //import com.sun.jersey.api.container.httpserver.HttpServerFactory;
 import java.io.*;
 import java.util.List;
+import org.opennaas.extensions.network.model.TopologyValidator;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.GenericEntity;
